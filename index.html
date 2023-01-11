@@ -1,62 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- head is header for html document -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
     <title>Calculator</title>
 </head>
-<body>
-    <div class="container">
-<h1>Calculator</h1>
+<!-- body for html document -->
 
-<div class="calculator">
-    
-    <!-- To creat screen of calculator or To creat output  : use input tag -->
-    <input type="next" name="screen" id="screen">
-    
-    <!-- Creat table tag for buttons one to nine and zero in calculator -->
-<table>
-     <!-- Row one -->
-     <tr>
-        <td><button>(</button></td>
-        <td><button>)</button></td>
-        <td><button>C</button></td>
-        <td><button>%</button></td>
-    </tr>
-    <!-- Row one -->
-    <tr>
-        <td><button>7</button></td>
-        <td><button>8</button></td>
-        <td><button>9</button></td>
-        <td><button>x</button></td>
-    </tr>
-    <!-- Row two -->
-    <tr>
-        <td><button>4</button></td>
-        <td><button>5</button></td>
-        <td><button>6</button></td>
-        <td><button>-</button></td>
-    </tr>
-    <!-- Row three -->
-    <tr>
-        <td><button>1</button></td>
-        <td><button>2</button></td>
-        <td><button>3</button></td>
-        <td><button>+</button></td>
-    </tr>
-    <!-- Row four -->
-    <tr>
-        <td><button>0</button></td>
-        <td><button>.</button></td>
-        <td><button>/</button></td>
-        <td><button>=</button></td>
-    </tr>
-</table>
-</div>
+<body>
+
+    <header>
+        <nav>
+            <a href="#">
+                <img src="https://i.postimg.cc/G3qvjhms/calculator-Logo.jpg" alt="Logo">
+            </a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <h1 id="title">Calculator</h1>
+
+        <div class="calculator">
+
+            <!-- To creat screen of calculator or To creat output  : use input tag -->
+            <input type="next" name="screen" id="screen">
+
+            <!-- Creat table tag for buttons one to nine and zero in calculator -->
+            <table>
+                <!-- Row one -->
+                <tr>
+                    <td><button>(</button></td>
+                    <td><button>)</button></td>
+                    <td><button>C</button></td>
+                    <td><button>%</button></td>
+                </tr>
+                <!-- Row one -->
+                <tr>
+                    <td><button>7</button></td>
+                    <td><button>8</button></td>
+                    <td><button>9</button></td>
+                    <td><button>x</button></td>
+                </tr>
+                <!-- Row two -->
+                <tr>
+                    <td><button>4</button></td>
+                    <td><button>5</button></td>
+                    <td><button>6</button></td>
+                    <td><button>-</button></td>
+                </tr>
+                <!-- Row three -->
+                <tr>
+                    <td><button>1</button></td>
+                    <td><button>2</button></td>
+                    <td><button>3</button></td>
+                    <td><button>+</button></td>
+                </tr>
+                <!-- Row four -->
+                <tr>
+                    <td><button>0</button></td>
+                    <td><button>.</button></td>
+                    <td><button>/</button></td>
+                    <td><button>=</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="div_foot">
+            <footer id="footer">
+
+                <ul id="footer-ul">
+                    <li id="footer-line01">Mohammed Shakir Project</li>
+                    <li id="footer_line02">Basic Mathematics Calculations</li>
+                </ul>
+
+            </footer>
+            <footer id="footerLast">
+                <small id="small">Copyright &copy; Shakir.Calculator.inc</small>
+            </footer>
+        </div>
     </div>
 </body>
 <script src="index.js"></script>
+
 </html>

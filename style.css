@@ -1,45 +1,158 @@
-.container{
+body {
+    background: linear-gradient(to right, rgb(19, 181, 106), rgb(229, 86, 86));
+}
+
+header {
+    background-color: #333;
+    /* Change to your desired color */
+    color: #fff;
+    /* Change to your desired text color */
+}
+
+header nav {
+    display: flex;
+    /* Use flexbox to align elements horizontally */
+    justify-content: space-between;
+    /* Align logo and navigation links to opposite sides of the container */
+    align-items: center;
+    /* Center elements vertically */
+    padding: 10px;
+    /* Add some padding */
+}
+
+header nav a {
+    text-decoration: none;
+    /* Remove underline from links */
+    color: #fff;
+    /* Change to your desired text color */
+}
+
+header nav img {
+    width: 100px;
+    /* Change to your desired logo width */
+    height: auto;
+    /* Keep aspect ratio of the image */
+}
+
+header nav ul {
+    list-style: none;
+    /* Remove bullet points */
+    margin: 0;
+    /* Remove margin */
+    padding: 0;
+    /* Remove padding */
+    display: flex;
+    /* Use flexbox to align list items horizontally */
+}
+
+header nav ul li {
+    margin-right: 20px;
+    /* Add some margin to separate list items */
+}
+
+header nav ul li a:hover {
+    color: #ff0000;
+    /* Change to your desired hover color */
+}
+
+
+/* This is mid part of webpag */
+
+
+/* Define the keyframes for the animation */
+
+@keyframes title-animation {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+/* Apply the animation to the title element */
+
+#title {
+    animation: title-animation 2.7s 1s ease-in-out;
+}
+
+#title:hover {
+    animation: scale-title 0.5s ease-in-out;
+}
+
+@keyframes scale-title {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
+}
+
+.container {
     text-align: center;
     margin-top: 28px;
 }
-table{
+
+table {
     /* not working  : margin: centre; */
-    
-   margin: auto;
-   margin-top: 23px;
+    margin: auto;
+    margin-top: 23px;
 }
-input{
+
+input {
     font-size: 33px;
     border-radius: 12px;
     border: 3px solid gray;
-   
-}   
+    box-shadow: inset 3px 3px 5px 0px rgb(0, 0, 0);
+}
 
-
-button{
+button {
     border-radius: 16px;
     font-size: 25px;
     width: 70px;
     height: 60px;
     background-color: rgb(216, 216, 216);
-    box-shadow: 7px 5px 12px rgb(56, 56, 56);
+    box-shadow: 7px 5px 10px rgb(56, 56, 56);
     cursor: pointer;
-    
     margin: 2px;
 }
-button:hover{
+
+button:hover {
     color: rgb(110, 110, 110);
     /* background-color: black; */
 }
-button:active{
+
+button:active {
     background-color: rgb(0, 0, 0);
-    color:rgb(255, 255, 255) ;
+    color: rgb(255, 255, 255);
 }
-.calculator{
+
+.calculator {
     display: inline-block;
-    border: 1px solid ;
+    border: 1px solid;
     border-radius: 25px;
     padding: 23px;
-    background-color: rgb(109, 108, 108);
+    /* background-color: rgb(109, 108, 108); */
+    background: radial-gradient(ellipse, rgb(129, 128, 128) 59%, rgb(59, 58, 58) 100%);
+    box-shadow: 6px 6px 1px rgb(60, 60, 60);
+}
 
+#footer {
+    font-size: 12px;
+    padding: 30px;
+    margin-top: 30px;
+    color: aliceblue;
+    text-align: left;
+    background-color: rgb(54, 54, 54);
+}
+
+footer ul li {
+    margin-top: 20px;
+}
+
+.div_foot {
+    background-color: rgb(34, 34, 34);
+    color: aliceblue;
 }
